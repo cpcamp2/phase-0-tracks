@@ -17,3 +17,5 @@ A commit is a save and a good commit message would say what the feature does or 
 * What is a merge conflict?
 
 A merge conflict is when you merge branches and there are conflicting changes that aren't compatible. 
+
+Ayyyy
