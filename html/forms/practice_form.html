@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+</head>
+<body>
+  <h1>Welcome to DBC's survey!</h1>
+  <form name="Survey" action="success.html" method="post">
+    <ol>
+      <li>
+        <div>
+          <label>From 1 to 5, how likely are you to recommend DBC to a friend or colleague?</label>
+          <select name="NPS">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label>Why did you give that score?</label>
+          <textarea name="reason">Give a reason here...</textarea>
+        </div>
+      </li>
+      <li>
+        <div>
+          <label>What location are you signed up for?</label><br>
+          <input type="radio" name="location" value="SF">San Francisco<br>
+          <input type="radio" name="location" value="NY">New York<br>
+          <input type="radio" name="location" value="Chicago">Chicago<br>
+          <input type="radio" name="location" value="Seattle">Seattle
+        </div>
+      </li>
+      <li>
+        <div>
+          <label>Email:</label>
+          <input type="email" name="email">
+        </div>
+      </li>
+      <li>
+        <div>
+          <label>Telephone:</label>
+          <input type="tel" name="telephone">
+        </div>
+      </li>
+    </ol>
+        <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
