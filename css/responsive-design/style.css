@@ -11,10 +11,10 @@ cite {
 
 #external-links ul {
   list-style-type: none;
-  padding-left: 0px
+  padding-left: 0px;
   width: 200px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 /* you're welcome to edit the
@@ -35,9 +35,32 @@ figcaption {
 }
 
 body {
-  width: 960px;
+  max-width: 960px;
+}
+
+#external-links {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 75px;
 }
 
 main {
-  max-width: 756px;
+  width: 70%;
+  display:inline-block;
 }
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 0.8em;
+  }
+  main {
+    max-width:100%;
+  }
+}
+
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}*/
