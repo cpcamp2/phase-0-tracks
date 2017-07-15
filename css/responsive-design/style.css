@@ -36,6 +36,7 @@ figcaption {
 
 body {
   max-width: 960px;
+  vertical-align: middle; 
 }
 
 #external-links {
