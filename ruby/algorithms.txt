@@ -1,0 +1,21 @@
+Elevator Algorithm for Robots:
+- Press either the up/down botton to call elevator depending on where you want to go.
+- Wait until elevator doors open
+- Enter elevator
+- Locate button panel
+- Press button of desired floor (human input?)
+- Wait until doors open on desired floor
+	- Look at floor # at either the top right or left of the elevator door
+
+Watch Netflix Algorithm:
+- Start-up device
+	- Could be a phone, tv laptop, etc.
+- Start-up netflix
+	- Use an app
+	- else watch through a browser
+- Select entertainment
+	- Search for titles
+	- else browse through film
+- Sit back and enjoy
+- Shutdown Netflix
+- Shutdown device
