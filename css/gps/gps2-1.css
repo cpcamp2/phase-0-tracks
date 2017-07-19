@@ -1,0 +1,28 @@
+.column-1 {
+  background-color: red;
+  float: left;
+}
+
+.column-2 {
+  background-color: blue;
+  float: right;
+}
+
+.column-1, .column-2 {
+  max-width: 47%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+* {
+  font-family: "Comic Sans", cursive;
+}
+
+h1, h2 {
+  text-decoration: underline;
+}
