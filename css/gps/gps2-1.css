@@ -9,7 +9,7 @@
 }
 
 .column-1, .column-2 {
-  max-width: 47%;
+  width: 47%;
   padding: 8px;
   margin-top: 10px;
 }
@@ -25,4 +25,11 @@ footer {
 
 h1, h2 {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 566px) {
+  .column-1, .column-2 {
+      float:none;
+      width: 95%;
+  }
 }
