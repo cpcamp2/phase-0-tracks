@@ -1,3 +1,10 @@
+puts "How many employees will be processed?"
+employee_number = gets.chomp.to_i
+
+i = 0
+
+until i >= employee_number
+
 puts "What is your name?"
 employee_name = gets.chomp.downcase
 
@@ -12,7 +19,27 @@ employee_garlic = gets.chomp.downcase
 
 puts "Would you like to enroll in the company's health insurance? (y/n)"
 employee_insurance = gets.chomp.downcase
- 
+
+allergy = nil
+
+loop do
+puts "Please list any allergies that you may have one at a time and type done when finished"
+allergy_input = gets.chomp.downcase
+
+	if allergy_input == "sunshine"
+		allergy = true
+		puts "Probably a vampire"
+		break
+	elsif allergy_input == "done"
+		allergy = false
+		break
+	end
+end
+
+if allergy == true 
+	break
+end
+
 current_year = Time.new.year
 c_birth_year = current_year - employee_age
 c_age = current_year - c_birth_year
@@ -32,3 +59,7 @@ elsif
 else
 	puts "Results inconclusive"
 end
+	i += 1
+end
+
+puts "Actually, nevermind! What do these questions have to do with anything? Let's all be friends."
