@@ -16,7 +16,7 @@ def create_list(items)
     p list
 end
 
-shopping_list = create_list("Lemonade Tomatoes Onions Icecream")
+shopping_list = create_list("")
 
 # Method to add an item to a list
 # input:
@@ -30,8 +30,8 @@ shopping_list = create_list("Lemonade Tomatoes Onions Icecream")
 # output:
     #Updated list
 
-def add_item(list, item, quantity = 1)
-    list[item] = 1
+def add_item(list, item, quantity)
+    list[item] = quantity
     p list
 end
 
@@ -74,9 +74,9 @@ end
 
 #Test below
 #update_quantity(shopping_list, "carrots", 12)
-update_quantity(shopping_list, "Lemonade", 2)
-update_quantity(shopping_list, "Tomatoes", 3)
-update_quantity(shopping_list, "Icecream", 4)
+# update_quantity(shopping_list, "Lemonade", 2)
+# update_quantity(shopping_list, "Tomatoes", 3)
+# update_quantity(shopping_list, "Icecream", 4)
 
 # Method to print a list and make it look pretty
 # input:
@@ -97,8 +97,12 @@ end
 #p pretty_list(shopping_list)
 
 #Release 2
+add_item(shopping_list, "Lemonade", 2)
+add_item(shopping_list, "Tomatoes", 3)
+add_item(shopping_list, "Onions", 1)
+add_item(shopping_list, "Ice Cream", 4)
 
 remove_item(shopping_list, "Lemonade")
-update_quantity(shopping_list, "Icecream", 1)
+update_quantity(shopping_list, "Ice Cream", 1)
 
 p pretty_list(shopping_list)
