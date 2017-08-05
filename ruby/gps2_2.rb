@@ -106,3 +106,26 @@ remove_item(shopping_list, "Lemonade")
 update_quantity(shopping_list, "Ice Cream", 1)
 
 p pretty_list(shopping_list)
+
+
+=begin
+
+What did you learn about pseudocode from working on this challenge?
+I learned that it helps you work through the steps of the project before actually coding it. It makes codinng wayyyy easier and to determine what works and what doesn't.
+
+What are the tradeoffs of using arrays and hashes for this challenge?
+I think using arrays for this challenge wouldn't have made much sense considering there was both a key and value for said key.
+
+What does a method return?
+It returns the value.
+
+What kind of things can you pass into methods as arguments?
+Any sort of value, key, hash, basically anything.
+
+How can you pass information between methods?
+an input taken as an argument then whatever method you determine to get the output you want.
+
+What concepts were solidified in this challenge, and what concepts are still confusing?
+Determining methods that take an input variable and gives you an output variable. I really struggled with this last week on the practice assessment for this was a great experience! I still feel a little bit confused about refactoring.
+
+=end
