@@ -1,0 +1,36 @@
+Release 1
+#User can enter a word (or phrase if the game can support that) and a second user tries to guess the word
+#Guessed must be limited and the number of guesses must be related to the length of the word
+#Repeated guesses do not count against the user
+#The guessing player receives feedback on the current state of the word. (basically hangman). 
+#If the user wins then put a congratulatory message and if the lose taunt them.
+
+I. Set up a Hangman class
+II. Initialize method for a string (use attr_reader so that instance variables can be read outside)
+	i. Put a new game statemenet on the screen
+	ii. Instance variables for:
+	 	a. The word (entered by first user - the word to be guessed)
+	 	b. Split the word into letters that can be guessed and assign to a new instance variable
+	 	c. Default a count instance variable to start at 0
+	 	d. The chances of winning the game based on the amount of guesses you have. 
+	 	e. Amt of guesses should be assigned to a variable using the length of the word to be guessed.
+	 	f. Set variable to false for end of game
+	 	g. Letter guessed assigned to a variable.
+III. Method for checking if you already guessed that letter or seeing if you didn't enter a single character string (input from second user)
+	i. Run a loop to be sure that the letter guessed is a string and if it isn't a string or a single letter put up a warning message and the method
+	ii. If it is a string and a single character continue and run to see if the letter has been guessed already or not. 
+
+IV. Method for guessing a letter in the word
+	i. Run loop to see if the letter has been guessed yet.
+		a. Iterate through the word characters to see if it includes the letter guessed
+		b. If it is right then put you have guessed a letter and then ask for another guess repeat method
+		c. If it is wrong then put you have guessed wrong and ask for another guess. Maybe return how many guesses you have left?
+
+V. Method for end-game
+	i. p guessed
+
+VI. Create a user interface that requests input from both users.
+	i. Welcome message
+	ii. Ask first user for the hangman word
+	iii. Create a variable w/ a database for that word.
+	iv. Loop that so that they can keep inputting until all of their guesses are used up.
