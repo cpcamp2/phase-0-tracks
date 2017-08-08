@@ -17,4 +17,41 @@ for (var i = 0;i<horses.length;i++) {
 	stable[name] = color;
 }
 
+// driver code:
 console.log(stable);
+
+// Release 2
+function Car(year,type,color) {
+console.log("Our new car:", this);
+this.year = year;
+this.type = type;
+this.color = color;
+
+this.testDrive = function(){
+	console.log('*You are test driving the vehicle*')
+	}
+};
+
+//carMakes = ['Ferrari', 'Mercedes', 'Volvo', 'Suburu'];
+
+console.log("Let's build a ford...");
+var ford = new Car(2016,"truck","black");
+console.log(ford);
+ford.testDrive();
+
+console.log("Let's build a ferrari...");
+var ferrari = new Car(1977,"sports car","red");
+console.log(ferrari);
+ferrari.testDrive();
+
+console.log("Let's build a mercedes...");
+var mercedes = new Car(1977,"sports car","red");
+console.log(mercedes);
+mercedes.testDrive();
+
+console.log("Let's build another car...");
+var suburu = new Car(1977,"sports car","red");
+console.log(suburu);
+suburu.testDrive();
+
+// Release 3
