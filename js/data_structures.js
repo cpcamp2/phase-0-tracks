@@ -53,5 +53,3 @@ console.log("Let's build another car...");
 var suburu = new Car(1977,"sports car","red");
 console.log(suburu);
 suburu.testDrive();
-
-// Release 3
