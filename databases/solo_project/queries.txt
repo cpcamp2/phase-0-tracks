@@ -1,0 +1,7 @@
+Release #2:
+
+I.  SELECT * FROM marvel_chars;
+II. UPDATE marvel_chars SET name= "DAREDEVIL" WHERE name="Daredevil";
+III. SELECT * FROM marvel_chars, char_type;
+IV. SELECT marvel_chars.name, char_type.name FROM marvel_chars JOIN char_type ON marvel_chars.name = char_type.name;
+V. DELETE FROM marvel_chars WHERE name="DAREDEVIL";
