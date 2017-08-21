@@ -1,0 +1,14 @@
+Release #2:
+
+I.  SELECT * FROM marvel_chars;
+II. UPDATE marvel_chars SET name= "DAREDEVIL" WHERE name="Daredevil";
+III. SELECT * FROM marvel_chars, char_type;
+IV. SELECT marvel_chars.name, char_type.name FROM marvel_chars JOIN char_type ON marvel_chars.name = char_type.name;
+V. DELETE FROM marvel_chars WHERE name="DAREDEVIL";
+
+Release #3:
+Join - combine rows from tables based on a common field
+Inner- returns all rows from  tables where the join condition is met
+Left Join- disply all data from left table
+Right join: returns all rows from the right table, with the matching rows in the left table. The result is NULL in the left side where there is no match. 
+Full Join- returns all rows from the left table and from the right table
