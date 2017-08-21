@@ -1,0 +1,22 @@
+Join 3 tables:
+
+sqlite> SELECT reviews.id, stars, comment, business_id, user_id
+   ...> FROM reviews
+   ...> NATURAL JOIN businesses
+   ...> NATURAL JOIN users;
+
+Choose instead to just view the user's names, business name, the star rating, and the comment:
+
+ SELECT users.First_name, businesses.name, stars, comment
+   ...> FROM users
+   ...> NATURAL JOIN businesses
+   ...> NATURAL JOIN reviews;
+
+   View the data of all three tables for just one particular business:
+
+   SELECT users.first_name, businesses.name, stars, comment
+   ...> FROM users
+   ...> NATURAL JOIN businesses
+   ...> NATURAL JOIN reviews
+   ...> WHERE business_id = 1;
+
