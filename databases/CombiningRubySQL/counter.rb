@@ -61,9 +61,9 @@ end #update_contact
 #V. view contact by name method
 def lookup_contact(rolodex, name)
 	contact = rolodex.execute("SELECT * FROM rolodex WHERE name=?", [name])
-	if contact.length == 0
-		puts "I do not recognize the name '#{name}'"
-	else
+	# if contact.length == 0
+	# 	puts "I do not recognize the name '#{name}'"
+	# else
 		contact.each do |individual|
 			puts "-----------------------------------------------------------"
 			puts "Name: #{individual['name']}"
@@ -72,7 +72,7 @@ def lookup_contact(rolodex, name)
 			puts "Address: #{individual['mailing_address']}"
 			puts "Notes: #{individual['comments']}"
 		end#do 
-	end#if
+	#end#if
 end #lookup_contact
 
 #Driver code
@@ -102,6 +102,7 @@ until exit == true
 		puts "Please enter the name of the contact you wish to see"
 		name = gets.chomp.downcase
 		lookup_contact(db, name)
+		exit = true
 
 	when "add contact" #db, name, phone_number, email, mailing_address, comments
 		puts "What is the full name of your contact?"
