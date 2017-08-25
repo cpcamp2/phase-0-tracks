@@ -1,0 +1,18 @@
+div {
+    height:500px;
+    width:200px;
+    display: inline-block;
+}
+
+#red {
+    background-color:#FF0055;
+}
+
+#blue {
+    background-color:#1900FF;
+}
+
+
+#green {
+    background-color:#4CAF50;
+}
